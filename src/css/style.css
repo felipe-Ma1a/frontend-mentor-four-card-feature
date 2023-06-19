@@ -50,6 +50,7 @@ main {
 
 .item {
   box-shadow: 0px 0px 14px 1px #00000024;
+  background-color: #fff;
   padding: 2rem;
   max-width: 330px;
 }
@@ -99,13 +100,18 @@ main {
     flex-direction: column;
     align-items: center;
   }
-}
 
-@media (width >= 1000px) {
+  header h1 {
+    font-size: var(--fs-700);
+    max-width: 380px;
+  }
+
   header p {
     max-width: 500px;
   }
+}
 
+@media (width >= 1000px) {
   main > * + * {
     margin-top: 0;
   }
